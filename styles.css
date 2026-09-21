@@ -1,0 +1,143 @@
+.tienda {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 20px;
+}
+
+.listaProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+}
+
+.tarjetaProducto {
+    border: 1px solid #e3e5ee;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.iconoProducto {
+    margin-bottom: 8px;
+}
+.nombreProducto {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 4px 0;
+}
+
+.precioProducto {
+    font-size: 0.9rem;
+    color: #2451c4;
+    font-weight: 700;
+    margin: 4px 0 10px;
+}
+
+.btnAgregar {
+    width: 100%;
+    background: #2451c4;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+.carrito {
+  background: #f7f8fd;
+  border: 1px solid #e3e5ee;
+  border-radius: 12px;
+  padding: 18px;
+  height: fit-content;
+}
+
+.itemCarritoFila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e8f5;
+  font-size: 0.82rem;
+}
+
+.controlesCantidad {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.controlesCantidad button {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #c9cce0;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnEliminarItem {
+  background: none;
+  border: none;
+  color: #d1435b;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.totalCarrito {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 10px;
+}   
+.carritoVacio {
+  color: #5b6270;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+#btnVaciarCarrito {
+  background: #eceefb;
+  color: #444444;
+  border: 1px solid #d8dae8;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#btnCheckout {
+  background: #17a673;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#btnCheckout {
+  background: #17a673;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.mensajeCheckout {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.mensajeCheckout.exito {
+  color: #146c43;
+}
+
+.mensajeCheckout.error {
+color: #d1435b
+}
